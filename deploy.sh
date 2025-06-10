@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APP_DIR="/root/mvp/Docekrization"
+APP_DIR="/root/0mvp/Docekrization"
 GIT_REPO="https://github.com/officialashraf/Docekrization.git"
 IMAGE_NAME="da-react-app-image"
 CONTAINER_NAME="da-react-container-image"
@@ -23,7 +23,7 @@ echo "🏗️   Building React app..."
 npm run build
 
 echo "🐳 Building Docker image..."
-docker build -f ./Dockerfile -t $IMAGE_NAME .  # <- FIXED HERE
+docker build -t $IMAGE_NAME .  # <- FIXED HERE
 
 echo "🧹 Removing old container (if exists)..."
 docker rm -f $CONTAINER_NAME || true
