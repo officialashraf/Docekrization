@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APP_DIR="/root/data-analytic/mvp/Docekrization"
+APP_DIR="/root/mvp/Docekrization"
 GIT_REPO="https://github.com/officialashraf/Docekrization.git"
 IMAGE_NAME="da-react-app-image"
 CONTAINER_NAME="da-react-container-image"
